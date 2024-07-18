@@ -7,13 +7,42 @@
       <title>
         Bootstrap Project
       </title>
+      <style>
+        .jumbotron{
+          background-color: blanchedalmond;
+        }
+        body{
+          background-color: navajowhite;
+        }
+        .form-control{
+          background-color:bisque;
+        }
+        .btn-lg{
+          background-color: bisque;      
+        }
+        .navbar {
+            width: 100%;
+            background-color: #854D27;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color:aliceblue;
+            text-align: center;
+            padding: 14px 20px;
+        }
+        .navbar a:hover {
+            background-color:none;
+            color:black;
+        }
+      </style>
     </head> 
-
-    <body>
-         
-        <nav class="navbar navbar-inverse">
+    
+    <body>     
+        <nav class="navbar">
             <div class="navbar-header">
-              <a class="navbar-brand" href="#">Welcome</a>
+              <a class="navbar-brand">Welcome</a>
       
             </div>
             <ul class="nav navbar-nav">
@@ -40,10 +69,16 @@
                 <label for="passed">PASSWORD:</label>
                 <input type="password" class="form-control" id="passed" placeholder="Password here">
             </div>
+
+            <!--number-->
+            <div class="form-group">
+              <label for="phone">MOBILE NUMBER:</label>
+              <input type="number" class="form-control" id="phone" placeholder="Phone number here">
+            </div>
             <!--checkbox-->
             <div class="form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Keep me checked in</label>
+                <label class="form-check-label" for="exampleCheck1" id="hy">Keep me checked in</label>
             </div>
 
            <!--button-->
@@ -53,5 +88,11 @@
                 </label>
             </div>
         </div>
+        <script
+        src="http://code.jquery.com/jquery-3.1.1.js"
+        integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+        crossorigin="anonymous"></script> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="coffee1.js"></script>
     </body>
 </html>
