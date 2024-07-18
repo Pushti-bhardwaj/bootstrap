@@ -8,37 +8,185 @@
         Bootstrap Project main page
       </title>
 
+      <style>
+       
+        span{
+            font-family: 'Times New Roman', Times, serif;
+        }
+       .text-box {
+     width: 200px;
+     height: 200px;
+     border: 1px solid #ccc;
+     padding: 10px;
+     margin: 20px auto;
+     box-shadow: 2px 2px 5px bisque;
+     background-color:blanchedalmond;
+     align-content: center;
+     box-align: center;
+       }
+       
+      .background-text {
+      position:fixed;
+      color: #2E1F27;
+      top: 50%;
+      left: 50%;
+      font-size: 50px;
+      opacity: 0.7;
+      white-space: nowrap;
+      z-index: -1; /* Make sure it's behind the content */
+     animation: moveText 10s linear infinite;
+     }
+
+     @keyframes moveText {
+     0% {
+        transform: translate(-50%, -50%) translateX(100%);
+     }
+     100% {
+        transform: translate(-50%, -50%) translateX(-100%);
+     }
+     }
+
+    
+        #colour-change{
+       font-size: 24px;
+       font-weight: bold;
+       text-align: center;
+       margin-top: 50px;
+        } 
+        .jumbotron{
+            background-color: blanchedalmond;
+        }
+        p{
+            font-size: 20px;
+        }
+        #jumb li{
+        font-size : 20px;
+        }
+        body{
+            background-color:navajowhite;
+        }
+        .thumbnail{
+            border-radius: 0%;
+            border-color: brown;   
+        }
+        .navbar {
+            width: 100%;
+            background-color: #854D27;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color:aliceblue;
+            text-align: center;
+            padding: 14px 20px;
+        }
+        .navbar a:hover {
+            background-color:none;
+            color:black;
+        }
+        .navbar-top {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            background-color:#854D27;
+        }
+        .navbar-bottom {
+            position: relative;
+            top: 50px; 
+        }
+        .navbar-toggle .icon-bar {
+            background-color: whitesmoke;
+        }
+       
+        li{
+            size: 100px;;
+        }
+      </style>
+
     </head>
 
     <body>
-        <nav class="navbar navbar-inverse">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">Welcome</a>
-            </div>
+        <div class="background-text"> Cappuccino, Espresso, Latte, Lungo, Ristretto, Café au Lait Cold Brew
+         <p>Cappuccino, Espresso,Latte, Lungo, Ristretto, Café au Lait Cold Brew☕☕</p>
+    Cappuccino, Espresso,Latte, Lungo, Ristretto, Café au Lait Cold Brew
+         <p>Cappuccino, Espresso,Latte, Lungo, Ristretto, Café au Lait Cold Brew☕☕</p>
+    Cappuccino, Espresso,Latte, Lungo, Ristretto, Café au Lait Cold Brew
+         <p>Cappuccino, Espresso,Latte, Lungo, Ristretto, Café au Lait Cold Brew☕☕</p>
+    Cappuccino, Espresso,Latte, Lungo, Ristretto, Café au Lait Cold Brew
+         <p>Cappuccino, Espresso,Latte, Lungo, Ristretto, Café au Lait Cold Brew☕☕</p>
+    Cappuccino, Espresso,Latte, Lungo, Ristretto, Café au Lait Cold Brew
+         <p>Cappuccino, Espresso,Latte, Lungo, Ristretto, Café au Lait Cold Brew☕☕</p>
+    Cappuccino, Espresso,Latte, Lungo, Ristretto, Café au Lait Cold Brew
+         <p>Cappuccino, Espresso,Latte, Lungo, Ristretto, Café au Lait Cold Brew☕☕</p>
 
-            <ul class="nav navbar-nav">
-                <li><a href="bootstrap login.html">Login Page</a></li> 
-            </ul>
-        </nav>
 
+        </div>
+        <nav class="navbar navbar-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#example-navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span> <!-- for number of dash in hamburger -->
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Welcome</a>
+                </div>
+        
+                <!-- Navbar collapse -->
+                <div class="collapse navbar-collapse" id="example-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="bootstrap login.html">Login Page</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Link 1</a></li>
+                    </ul>
+        
+                    <!-- Search bar submit button -->
+                    <form class="navbar-form navbar-right" role="button">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                    </form>
+                    <form class="navbar-form navbar-right" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                    </form>
+                </div> <!-- navbar-collapse -->
+            </div> <!-- container-fluid -->
+        </nav> <!-- navbar-top -->
+        
         <div class="container">
             <div class="jumbotron">
-                <h2>THE "LOVING COFFEE" PROJECT</h2> 
-                <p>Coffee is a beverage brewed from roasted coffee beans. Darkly colored, bitter, and slightly acidic, coffee has a stimulating effect on humans, primarily due to its caffeine content. It has the highest sales in the world market for hot drinks.</p>
-                <p>The seeds of the Coffea plant's fruits are separated to produce unroasted green coffee beans. The beans are roasted and then ground into fine particles typically steeped in hot water before being filtered out, producing a cup of coffee. It is usually served hot, although chilled or iced coffee is common. Coffee can be prepared and presented in a variety of ways (e.g., espresso, French press, caffè latte, or already-brewed canned coffee). Sugar, sugar substitutes, milk, and cream are often added to mask the bitter taste or enhance the flavor</p>
+                <h2 id="one">THE 'LOVING COFFEE' PROJECT</h2>
+                <p>Coffee is a beverage brewed from roasted coffee beans. Darkly colored, bitter,Llightly acidic, coffee has a stimulating effect on humans, primarily due to its caffeine content. It has the highest sales in the world market for hot drinks.</p>
+                <p>The seeds of the Coffea plant's fruits are separated to produce unroasted green coffee beans. The beans are roaste,Lhen ground into fine particles typically steeped in hot water before being filtered out, producing a cup of coffee. It is usually served hot, although chilled or iced coffee is common. Coffee can be prepare,Lresented in a variety of ways (e.g., Espresso, French press, caffè latte, or already-brewed canned coffee). Sugar, sugar substitutes, milk,Lream are often added to mask the bitter taste or enhance the flavor.</p>
             </div>
-
-            <h3>COFFEE SELCAS</h3>
-            <div class="row">
-                <div class="col-lg-4 col-xs-6 thumbnail"><img  src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/5JVPSVP7EI.jpg" alt=""></div>
-                <div class="col-lg-4 col-xs-6 thumbnail"><img  src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/90V03Q5Y60.jpg" alt=""></div>
-                <div class="col-lg-4 col-xs-6 thumbnail"><img  src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/YSSFRY5B25.jpg" alt=""></div>
-                <div class="col-lg-4 col-xs-6 thumbnail"><img  src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/C5Y10KIIHA.jpg" alt=""></div>
-                <div class="col-lg-4 col-xs-6 thumbnail"><img  src="https://neurosciencenews.com/files/2023/06/coffee-brain-caffeine-neuroscincces.jpg" alt=""></div>
-                <div class="col-lg-4 col-xs-6 thumbnail"><img src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/04LDEYRW59.jpg" alt=""></div>
-
-            </div>
+            
+        <div class="text-box">
+        <div id="colour-change">COFFEE SELCAS</div>
+        </div>
+        <div class="row">
+         <div class="col-lg-4 col-xs-6 thumbnail"><img src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/5JVPSVP7EI.jpg" alt=""></div>
+         <div class="col-lg-4 col-xs-6 thumbnail"><img src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/90V03Q5Y60.jpg" alt=""></div>
+         <div class="col-lg-4 col-xs-6 thumbnail"><img src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/YSSFRY5B25.jpg" alt=""></div>
+         <div class="col-lg-4 col-xs-6 thumbnail"><img src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/C5Y10KIIHA.jpg" alt=""></div>
+         <div class="col-lg-4 col-xs-6 thumbnail"><img src="https://neurosciencenews.com/files/2023/06/coffee-brain-caffeine-neuroscincces.jpg" alt=""></div>
+         <div class="col-lg-4 col-xs-6 thumbnail"><img src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/04LDEYRW59.jpg" alt=""></div>
         </div>
 
+        <div class="navbar navbar-bottom">
+            <a href="#section1">Help</a>
+            <a href="#section2">Services</a>
+            <a href="#section3">Contacts</a>    
+        </div>
+        <script
+        src="http://code.jquery.com/jquery-3.1.1.js"
+        integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+        crossorigin="anonymous"></script> 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="coffee.js"></script>
     </body>
 </html>
