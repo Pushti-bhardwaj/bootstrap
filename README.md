@@ -11,11 +11,11 @@ JavaScript-based minimal interactivity.
 
 Project Structure:
 bootstrap/
-├── coffee1.html        # Main landing page
-├── coffee2.html        # Redirect page
-├── style.css           # Custom styles 
-├── script.js           # JavaScript for interactivity
-└── images/             # Image assets
+├── coffee1.html        
+├── coffee2.html       
+├── style.css            
+├── script.js          
+└── images/  
 
 What I Learned:
 How to build a structured layout with Bootstrap grid system.
