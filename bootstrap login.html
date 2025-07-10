@@ -37,6 +37,17 @@
             background-color:none;
             color:black;
         }
+        @keyframes shake {
+  0% { transform: translateX(0px); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0px); }
+}
+.shake {
+  animation: shake 0.5s;
+}
+
       </style>
     </head> 
 
@@ -45,7 +56,7 @@
         <div class="navbar-header">
           <a class="navbar-brand"><i class="fa fa-coffee">  Welcome</i></a>
         <ul class="nav navbar-nav">
-          <li><a href="bootstrap project 1.html"><i class="fa fa-home">  Landing page</i></a></li>
+          <li><a href="Coffee project.html"><i class="fa fa-home">  Landing page</i></a></li>
         </ul>
       </div>
     </nav>
@@ -91,6 +102,7 @@
         src="http://code.jquery.com/jquery-3.1.1.js"
         integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
         crossorigin="anonymous"></script> 
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="coffee1.js"></script>
     </body>
